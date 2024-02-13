@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Valentine's Day Card</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> <!-- Include jQuery library -->
 
   <style>
     body {
@@ -41,17 +42,20 @@
   </div>
   <div class="shadow"></div>
 </div>
+
 <script>
-$(document).ready(function () {
+  $(document).ready(function () {
     $('.container').mouseenter(function () {
-        $('.card').stop().animate({
-            top: '-90px'
-        }, 'slow');
+      $('.card').stop().animate({
+        top: '-90px'
+      }, 'slow');
     }).mouseleave(function () {
-        $('.card').stop().animate({
-            top: 0
-        }, 'slow');
+      $('.card').stop().animate({
+        top: 0
+      }, 'slow');
     });
-}); </script>
+  });
+</script>
+
 </body>
 </html>
